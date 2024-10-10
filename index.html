@@ -23,7 +23,7 @@
             height: auto;
             z-index: -1;
             transform: translate(-50%, -50%);
-            opacity: 0.7; /* Poți ajusta opacitatea după preferințe */
+            opacity: 0.7;
         }
         header {
             background-color: rgba(51, 51, 51, 0.8);
@@ -50,6 +50,35 @@
             width: 80%;
             margin: auto;
             padding: 20px;
+        }
+        .contact-section {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 1px solid #ff9900;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 0 0 15px rgba(255, 153, 0, 0.8);
+        }
+        .contact-title {
+            color: #ff9900;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .contact-item {
+            margin-bottom: 10px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .contact-item strong {
+            color: #ffcc00;
+        }
+        .contact-item a {
+            color: #ff9900;
+            text-decoration: none;
+        }
+        .contact-item a:hover {
+            text-decoration: underline;
         }
         .script, .contact {
             background: rgba(68, 68, 68, 0.8);
@@ -102,7 +131,7 @@
             background-color: #ffcc00;
         }
         .hidden {
-            display: none;
+            display: none; /* Clasa pentru a ascunde secțiunile */
         }
     </style>
 </head>
@@ -114,90 +143,104 @@
 </video>
 
 <header>
-    <h1>ScriptWaves - Halloween Edition</h1>
+    <h1>ScriptWaves - Halloween Edition 🎃</h1>
     <nav>
-        <a onclick="showSection('scripts')">Scripts</a>
-        <a onclick="showSection('support')">Support</a>
+        <a onclick="showSection('scripts')">Scripts 🎃</a>
+        <a onclick="showSection('support')">Support 🎃</a>
     </nav>
 </header>
 
 <div class="container">
     <section id="scripts" class="section">
-        <h2>Available Scripts</h2>
+        <h2>Available Scripts 🎃</h2>
         <div class="script card">
-            <h3>Adopt Me Auto Farm Candy's</h3>
+            <h3>🎃 Murder Mystery 2 Coin Farm's</h3>
             <pre id="script1">
-loadstring(game:HttpGet("https://egorikusa.space/a0a4ec71b2aa4b46d8f8836d.lua", true))()            
+loadstring(game:HttpGet("https://egorikusa.space/f76e4a441461c4843466a9a4.lua", true))()
             </pre>
-            <button class="copy-button" onclick="copyToClipboard('script1')">Copy Script</button>
+            <button class="copy-button" onclick="copyToClipboard('script1')">Copy Script 🎃</button>
         </div>
         <div class="script card">
-            <h3>Adopt Me Bucks Quest Farm</h3>
+            <h3>🎃 Murder Mystery 2 New Silent Aim</h3>
             <pre id="script2">
 loadstring(game:HttpGet("https://egorikusa.space/a0a4ec71b2aa4b46d8f8836d.lua", true))()
             </pre>
-            <button class="copy-button" onclick="copyToClipboard('script2')">Copy Script</button>
+            <button class="copy-button" onclick="copyToClipboard('script2')">Copy Script 🎃</button>
         </div>
         <div class="script card">
-            <h3>OP MURDER MYSTERY 2 SILENT</h3>
+            <h3>🎃 Murder Mystery 2 Aimbot</h3>
             <pre id="script3">
 loadstring(game:HttpGet("https://egorikusa.space/a0a4ec71b2aa4b46d8f8836d.lua", true))()
             </pre>
-            <button class="copy-button" onclick="copyToClipboard('script3')">Copy Script</button>
+            <button class="copy-button" onclick="copyToClipboard('script3')">Copy Script 🎃</button>
         </div>
         <div class="script card">
-            <h3>New OP Adopt Me Trade Scam</h3>
+            <h3>🎃 Murder Mystery Weapons Unlocker</h3>
             <pre id="script4">
 loadstring(game:HttpGet("https://egorikusa.space/a0a4ec71b2aa4b46d8f8836d.lua", true))()
             </pre>
-            <button class="copy-button" onclick="copyToClipboard('script4')">Copy Script</button>
+            <button class="copy-button" onclick="copyToClipboard('script4')">Copy Script 🎃</button>
         </div>
         <div class="script card">
-            <h3>Adopt Me Fly Script Bypassed</h3>
+            <h3>🎃 Murder Mystery 2 Legit Script for 1v1</h3>
             <pre id="script5">
 loadstring(game:HttpGet("https://egorikusa.space/a0a4ec71b2aa4b46d8f8836d.lua", true))()
             </pre>
-            <button class="copy-button" onclick="copyToClipboard('script5')">Copy Script</button>
+            <button class="copy-button" onclick="copyToClipboard('script5')">Copy Script 🎃</button>
         </div>
     </section>
 
-    <section id="support" class="section hidden">
-        <h2>Contact Information</h2>
-        <div class="contact card">
+    <section id="support" class="section contact-section hidden">
+        <h2 class="contact-title">Contact Information 🎃</h2>
+        <div class="contact-item">
             <p><strong>Owner:</strong> Wasper 🎃</p>
+        </div>
+        <div class="contact-item">
             <p><strong>Design Manager:</strong> Sara 🎀</p>
+        </div>
+        <div class="contact-item">
             <p><strong>Contributor:</strong> Winter 👻</p>
-            <p><strong>YouTube Channel:</strong> <a href="https://www.youtube.com/@oxykila" target="_blank">oxykila</a></p>
-            <p><strong>Discord:</strong> despited</p>
-            <p><strong>SoundCloud:</strong> <a href="https://soundcloud.com/luhwoxx" target="_blank">luhwoxx</a></p>
+        </div>
+        <div class="contact-item">
+            <p><strong>YouTube Channel:</strong> <a href="https://www.youtube.com/@oxykila" target="_blank">Watch on YouTube 🎃</a></p>
+        </div>
+        <div class="contact-item">
+            <p><strong>Discord:</strong> despited 🎃</p>
+        </div>
+        <div class="contact-item">
+            <p><strong>SoundCloud:</strong> <a href="https://soundcloud.com/luhwoxx" target="_blank">Listen on SoundCloud 🎃</a></p>
         </div>
     </section>
 </div>
 
 <footer>
-    <p>&copy; 2024 ScriptWaves. All rights reserved.</p>
+    <p>&copy; 2024 ScriptWaves. All rights reserved 🎃.</p>
 </footer>
 
 <script>
     function showSection(section) {
+        // Ascunde toate secțiunile
         const sections = document.querySelectorAll('.section');
-        sections.forEach(sec => {
-            if (sec.id === section) {
-                sec.classList.remove('hidden');
-            } else {
-                sec.classList.add('hidden');
-            }
-        });
+        sections.forEach(s => s.classList.add('hidden')); // Ascunde toate secțiunile
+        
+        // Afișează secțiunea selectată
+        const selectedSection = document.getElementById(section);
+        if (selectedSection) {
+            selectedSection.classList.remove('hidden'); // Afișează secțiunea dorită
+        }
     }
 
     function copyToClipboard(scriptId) {
         const script = document.getElementById(scriptId).innerText;
         navigator.clipboard.writeText(script).then(() => {
-            alert('Script copied to clipboard!');
-        }).catch(err => {
-            console.error('Could not copy text: ', err);
+            alert('Script copied to clipboard! 🎃');
         });
     }
+
+    // Afișează secțiunea inițială (scripts) la încărcare
+    window.onload = function() {
+        showSection('scripts');
+    };
 </script>
 
 </body>
